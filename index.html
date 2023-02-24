@@ -14,6 +14,22 @@
         rel="stylesheet" type="text/css" />
     <script
         src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        #banner-section {
+            background-image: url(images/banner_1.png),
+                linear-gradient(rgb(18 17 17 / 50%), rgb(0 0 0 / 73%));
+            background-blend-mode: overlay;
+        }
+
+        #search {
+            padding: 5px;
+        }
+
+        #button {
+            background-color: aqua;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,9 +39,8 @@
             class="navbar bg-base-100 w-9/12 mx-auto mt-6">
             <div class="navbar-start">
 
-                <h1 class="text-3xl font-bold">
-                    Tasty HUT
-                </h1>
+                <img src="images/Tasty_HUT.png"
+                    alt="">
             </div>
             <div class="navbar-end">
                 <button
@@ -38,9 +53,38 @@
 
     <!-- main start -->
     <main>
-        <section>
-
+        <!-- banner section start -->
+        <section id="banner-section"
+            class=" mt-6 h-screen flex items-center justify-center">
+            <div class=" text-center">
+                <h1
+                    class="text-5xl font-bold mb-4 text-white">
+                    Taste Our
+                    Delicious <br> Best Foods
+                </h1>
+                <p class="mb-4 text-white">There
+                    are many
+                    variations of
+                    passages of Lorem Ipsum
+                    available, but the majority
+                    <br>
+                    have suffered alteration in
+                    some form, by injected humou.
+                </p>
+                <div class="form-control ">
+                    <div
+                        class="input-group flex items-center justify-center">
+                        <input type="text"
+                            placeholder="Search…"
+                            class="input input-bordered" />
+                        <button
+                            class="btn btn-warning font-bold">Sign
+                            up</button>
+                    </div>
+                </div>
+            </div>
         </section>
+        <!-- banner section end -->
     </main>
     <!-- main end -->
 
