@@ -75,8 +75,10 @@
                         class="input-group flex items-center justify-center">
                         <input type="text"
                             placeholder="Search…"
-                            class="input input-bordered" />
+                            class="input input-bordered"
+                            id="inputFiled" />
                         <button
+                            onclick="searchText()"
                             class="btn btn-warning font-bold">Search</button>
                     </div>
                 </div>
@@ -91,63 +93,32 @@
                 Your
                 Favourite
                 Food</h2>
-            <div
-                class="lg:grid lg:grid-cols-2 gap-4 mt-12">
-                <div
-                    class="card card-side bg-base-100 shadow-sm">
-                    <figure><img
-                            class="rounded-r-xl"
-                            src="images/action.png"
-                            alt="Movie" />
-                    </figure>
-                    <div class="card-body">
-                        <h2 class="card-title">
-                            New
-                            movie is released!
-                        </h2>
-                        <p>Click the button to
-                            watch on Jetflix
-                            app.
-                        </p>
-                        <a class="text-[#fbbd23] font-bold underline"
-                            href="">View
-                            Details</a>
-                    </div>
-                </div>
-                <!-- ... -->
-                <div>
-                    <div
-                        class="card card-side bg-base-100 shadow-sm">
-                        <figure><img
-                                class="rounded-r-xl"
-                                src="images/mic.png"
-                                alt="Movie" />
-                        </figure>
-                        <div class="card-body">
-                            <h2
-                                class="card-title">
-                                New
-                                movie is released!
-                            </h2>
-                            <p>Click the button to
-                                watch on Jetflix
-                                app.
-                            </p>
-                            <a class="text-[#fbbd23] font-bold underline"
-                                href="">View
-                                Details</a>
-                        </div>
-                    </div>
-                </div>
+            <div id="container"
+                class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-12">
             </div>
             <div
                 class="flex items-center justify-center mt-16">
-                <button
+                <button onclick="showAll()"
                     class="btn btn-warning font-bold">Show
                     All</button>
             </div>
         </section>
         <!--food section end  -->
+
+        <!-- all food details section start -->
+        <section>
+            <!-- The button to open modal -->
+            <input type="checkbox" id="my-modal-6"
+                class="modal-toggle" />
+            <div
+                class="modal modal-bottom sm:modal-middle">
+                <div id="modal-box"
+                    class="modal-box">
+
+                </div>
+            </div>
+        </section>
+        <!-- all food details section end -->
     </main>
     <!-- main end -->
 
